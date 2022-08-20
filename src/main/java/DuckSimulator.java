@@ -1,4 +1,5 @@
 import adapters.GooseAdapter;
+import adapters.PigeonAdapter;
 import animals.*;
 
 public class DuckSimulator {
@@ -13,6 +14,7 @@ public class DuckSimulator {
         Quackable duckCall = new DuckCall();
         Quackable rubberDuck = new RubberDuck();
         Quackable gooseDuck = new GooseAdapter(new Goose());
+        Quackable pigeonDuck = new PigeonAdapter(new Pigeon());
 
         System.out.println("\nDuck Simulator");
 
@@ -21,6 +23,7 @@ public class DuckSimulator {
         simulate(duckCall);
         simulate(rubberDuck);
         simulate(gooseDuck);
+        simulate(pigeonDuck);
     }
 
     void simulate(Quackable duck) {
